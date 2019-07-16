@@ -20,6 +20,7 @@ Repositório do projeto: ->https://github.com/msvieiraweb/amqp-app
     ```rabbitmq_delayed_message_exchange```
     
     - Utilizando a imagem do docker
+    
     ```docker cp rabbitmq_delayed_message_exchange-20171215-3.6.x.ez rabbit-server:/plugins```
     
     ```docker exec rabbit-server rabbitmq-plugins enable rabbitmq_delayed_message_exchange```
