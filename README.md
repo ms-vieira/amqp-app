@@ -14,8 +14,21 @@ Repositório do projeto: ->https://github.com/msvieiraweb/amqp-app
     ``` host: localhost ```
     ``` username: ``` 
     ``` password: ```
- - Se for utilizar o delay, deverá instalar o pluguin:
+    
+ - Para utilizar o delay, deverá instalar o pluguin:
+    - No diretório:../resources
     ```rabbitmq_delayed_message_exchange```
+    
+    - Utilizando a imagem do docker
+    ```docker cp rabbitmq_delayed_message_exchange-20171215-3.6.x.ez rabbit-server:/plugins```
+    
+    ```docker exec rabbit-server rabbitmq-plugins enable rabbitmq_delayed_message_exchange```
+    
+    ```docker exec rabbit-server rabbitmq-plugins list```
+    
+- Run As -> ``` WebStarter ``` com os profiles: 
 
-- Run As -> ``` WebStarter ``` com o profile ```receiver``` e ```sender```
+    ```-Dspring.profiles.active=receiver```
+    
+    ```-Dspring.profiles.active=sender```
 
