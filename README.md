@@ -11,7 +11,7 @@ Repositório do projeto: ->https://github.com/msvieiraweb/amqp-app
 - Configurar o application com os parametros do rabbit:
 
     ``` rabbitmq: ```
-    ``` host: localhost ```
+    ``` host:  ```
     ``` username: ``` 
     ``` password: ```
     
